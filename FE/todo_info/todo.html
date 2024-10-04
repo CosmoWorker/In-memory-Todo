@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Simple To-Do Web-app</title>
+        <link rel="stylesheet" href="todo.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    </head>
+    <body>
+         
+        <h1>To- Do List 📝</h1>
+        <div id="logout-section">
+            <button id="logout" onclick="logout()">logout</button>
+        </div>
+        
+        <div>
+            <div id="task-container">
+                <input type="text" placeholder="Enter task">
+                <button onclick="addToDo()" id="add-todo">Add todo</button>
+                <button onclick="clearToDo()" id="clear-todo">Clear All todos</button>
+            </div>
+            <div id="todos-container"></div>
+            <script src="todo.js"></script>
+        </div>
+        
+    </body>
+</html>

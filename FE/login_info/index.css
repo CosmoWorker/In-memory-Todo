@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(245, 245, 226);
+}
+
+#sign-container{
+    margin-left: 30px;
+}
+
+#sign-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 9px;
+    background-color: rgb(170, 218, 218);
+}
+
+input{
+    border-radius: 4px;
+    width: 170px;
+    height: 35px;
+    margin: 6px;
+}::placeholder{
+    color: rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sign-inp{
+    margin-bottom: 25px;
+}
+
+button{
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 7px;
+    height: 40px;
+    width: 70px;
+    margin-left: 6px;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#emoji{
+    font-size: 7rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
