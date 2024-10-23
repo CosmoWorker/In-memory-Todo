@@ -2,6 +2,7 @@ const express= require("express")
 const app=express()
 const jwt=require("jsonwebtoken")
 const cors = require('cors');
+const path=require('path')
 require("dotenv").config();
 
 app.use(express.json())
@@ -15,10 +16,12 @@ JWT_SECRET="Pomodoro"
 
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, '../FE')));
 
-app.get("/", (req, res)=>{
-    res.sendFile(__dirname+"/FE/index.html")
-})
+// Serve login.html on the root path
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../FE/login_info/index.html'));
+});
 
 //Auth 
 const auth=(req, res, next)=>{
