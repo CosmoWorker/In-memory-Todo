@@ -4,6 +4,7 @@ const jwt=require("jsonwebtoken")
 const cors = require('cors');
 const path=require('path')
 require("dotenv").config();
+const jwtSecret=process.env.JWT_SECRET;
 
 app.use(express.json())
 const port=process.env.PORT || 5000;
@@ -12,7 +13,7 @@ users=[]
 userTodos=[]
 let todoId=0;
 
-JWT_SECRET="Pomodoro"
+JWT_SECRET=jwtSecret;
 
 app.use(cors());
 
